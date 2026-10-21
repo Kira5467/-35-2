@@ -1,8 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="uk"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="uk"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="uk"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="uk"> <!--<![endif]-->
+<html class="no-js" lang="uk">
     <head>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KTBCB838P"></script>
@@ -10,244 +7,248 @@
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'G-0KTBCB838P');
         </script>
+        
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        
-        <title>Галерея солодощів — Sweet Delight | Торти та десерти</title>
-        <meta name="description" content="Перегляньте каталог наших авторських тортів, весільних десертів та солодких столів ручної роботи.">
+        <title>Галерея солодощів — Sweet Delight</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/tooplate-style.css">
 
-        <!-- Жорстке вирівнювання сітки галереї -->
+        <!-- Сучасний, чистий дизайн без конфліктів зі старими стилями -->
         <style>
-            .projects-grid {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-                justify-content: flex-start;
+            body {
+                font-family: 'Open Sans', sans-serif;
+                background-color: #fafafa;
+                color: #333;
+                margin: 0;
+                padding: 0;
             }
-            .project-card {
-                width: calc(25% - 15px);
-                background: #fff;
-                margin-bottom: 20px;
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: column;
+            /* Шапка галереї */
+            .gallery-header {
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/first-bg.jpg') no-repeat center center;
+                background-size: cover;
+                color: #fff;
+                text-align: center;
+                padding: 80px 20px;
+                margin-bottom: 30px;
+            }
+            .gallery-header h2 {
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .gallery-header span {
+                font-size: 16px;
+                opacity: 0.9;
+            }
+            
+            /* Кнопка повернення */
+            .back-container {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .back-btn {
+                display: inline-block;
+                background-color: #d63031;
+                color: #fff;
+                padding: 10px 25px;
+                border-radius: 25px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: background 0.3s;
+            }
+            .back-btn:hover {
+                background-color: #c0392b;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            /* Сітка галереї (CSS Grid) — ніколи не з'їжджає */
+            .container-grid {
+                max-width: 1170px;
+                margin: 0 auto;
+                padding: 0 15px;
+            }
+            .menu-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 25px;
+                margin-bottom: 60px;
             }
             @media (max-width: 992px) {
-                .project-card {
-                    width: calc(50% - 10px);
+                .menu-grid {
+                    grid-template-columns: repeat(2, 1fr);
                 }
             }
             @media (max-width: 576px) {
-                .project-card {
-                    width: 100%;
+                .menu-grid {
+                    grid-template-columns: 1fr;
                 }
             }
-            .project-card .image {
+
+            /* Картка товару */
+            .menu-card {
+                background: #fff;
+                border-radius: 8px;
                 overflow: hidden;
-                border-radius: 4px;
-                height: 220px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                transition: transform 0.3s ease;
+                display: flex;
+                flex-direction: column;
             }
-            .project-card .image img {
+            .menu-card:hover {
+                transform: translateY(-5px);
+            }
+            .menu-card img {
                 width: 100%;
-                height: 100%;
+                height: 220px;
                 object-fit: cover;
                 display: block;
             }
-            .project-card .text {
-                padding: 15px 0;
+            .menu-card .card-content {
+                padding: 20px;
                 text-align: center;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .menu-card .category {
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #d63031;
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+                display: block;
+            }
+            .menu-card h4 {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0;
+                color: #222;
+            }
+
+            /* Підвал */
+            footer {
+                background: #222;
+                color: #aaa;
+                text-align: center;
+                padding: 40px 20px;
+                font-size: 13px;
+            }
+            footer p {
+                margin-top: 15px;
+                line-height: 1.6;
             }
         </style>
-
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
 
         <!-- Шапка галереї -->
-        <section class="first-gallery-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="text-content">
-                  <h2>Галерея десертів</h2>
-                  <div class="line-dec"></div>
-                  <span>Всі наші солодкі шедеври в одному місці</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <div class="gallery-header">
+            <h2>Галерея десертів</h2>
+            <span>Всі наші солодкі шедеври в одному місці</span>
+        </div>
 
-        <!-- Навігація назад на головну -->
-        <section class="send-to-home">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="back-to-home">
-                  <span>Обирайте улюблені солодощі та створюйте настрій для ваших особливих подій.</span>
-                  <div class="primary-button">
-                    <a href="index.html">На головну сторінку</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-  
-        <!-- Основний вміст галереї з фільтрами -->
-        <div class="content-wrapper">
-            <div class="inner-container container">
-                <div class="projects-holder-3">
-                    <div class="filter-categories">
-                        <ul class="project-filter">
-                            <li class="filter" data-filter="all"><span>Усі</span></li>
-                            <li class="filter" data-filter="cakes"><span>Торти</span></li>
-                            <li class="filter" data-filter="macarons"><span>Макарони</span></li>
-                            <li class="filter" data-filter="desserts"><span>Десерти</span></li>
-                            <li class="filter" data-filter="wedding"><span>Весільні</span></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="projects-holder">
-                        <div class="projects-grid">
-                            
-                            <!-- 1 -->
-                            <div class="project-card mix cakes">
-                              <div class="image">
-                                <a href="img/01-big-item.jpg" data-lightbox="image-1"><img src="img/01-item.jpg" alt="Торт Ягідний вибух"></a>
-                              </div>
-                              <div class="text">
-                                <span>Торти</span>
-                                <h4>Ягідний вибух</h4>
-                              </div>
-                            </div>
+        <!-- Кнопка назад -->
+        <div class="back-container">
+            <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i> На головну сторінку</a>
+        </div>
 
-                            <!-- 2 -->
-                            <div class="project-card mix macarons">
-                              <div class="image">
-                                <a href="img/02-big-item.jpg" data-lightbox="image-1"><img src="img/02-item.jpg" alt="Макарони асорті"></a>
-                              </div>
-                              <div class="text">
-                                <span>Макарони</span>
-                                <h4>Набір «Асорті»</h4>
-                              </div>
-                            </div>
-
-                            <!-- 3 -->
-                            <div class="project-card mix desserts">
-                              <div class="image">
-                                <a href="img/03-big-item.jpg" data-lightbox="image-1"><img src="img/03-item.jpg" alt="Мусове тістечко"></a>
-                              </div>
-                              <div class="text">
-                                <span>Десерти</span>
-                                <h4>Шоколадний мус</h4>
-                              </div>
-                            </div>
-
-                            <!-- 4 -->
-                            <div class="project-card mix wedding cakes">
-                              <div class="image">
-                                <a href="img/04-big-item.jpg" data-lightbox="image-1"><img src="img/04-item.jpg" alt="Весільний двоярусний торт"></a>
-                              </div>
-                              <div class="text">
-                                <span>Весільні / Торти</span>
-                                <h4>Біла елегантність</h4>
-                              </div>
-                            </div>
-
-                            <!-- 5 -->
-                            <div class="project-card mix desserts">
-                              <div class="image">
-                                <a href="img/05-big-item.jpg" data-lightbox="image-1"><img src="img/05-item.jpg" alt="Капкейки"></a>
-                              </div>
-                              <div class="text">
-                                <span>Десерти</span>
-                                <h4>Капкейки з кремом</h4>
-                              </div>
-                            </div>
-
-                            <!-- 6 -->
-                            <div class="project-card mix wedding macarons">
-                              <div class="image">
-                                <a href="img/06-big-item.jpg" data-lightbox="image-1"><img src="img/06-item.jpg" alt="Кенді-бар"></a>
-                              </div>
-                              <div class="text">
-                                <span>Весільні / Макарони</span>
-                                <h4>Святковий кенді-бар</h4>
-                              </div>
-                            </div>
-
-                            <!-- 7 -->
-                            <div class="project-card mix macarons">
-                              <div class="image">
-                                <a href="img/07-big-item.jpg" data-lightbox="image-1"><img src="img/07-item.jpg" alt="Фісташкові макарони"></a>
-                              </div>
-                              <div class="text">
-                                <span>Макарони</span>
-                                <h4>Фісташкова насолода</h4>
-                              </div>
-                            </div>
-
-                            <!-- 8 -->
-                            <div class="project-card mix cakes">
-                              <div class="image">
-                                <a href="img/08-big-item.jpg" data-lightbox="image-1"><img src="img/08-item.jpg" alt="Червоний оксамит"></a>
-                              </div>
-                              <div class="text">
-                                <span>Торти</span>
-                                <h4>Червоний оксамит</h4>
-                              </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-        <!-- Підвал сторінки -->
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <ul>
-                  <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
+        <!-- Основна сітка десертів -->
+        <div class="container-grid">
+            <div class="menu-grid">
                 
-                <!-- Навчальне застереження та авторство -->
-                <p style="margin-top: 15px; font-size: 11px; opacity: 0.85; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
-                  © 2026 Увага! Цей веб-сайт є навчальним проєктом, створеним виключно з освітньою метою в межах навчального курсу. Сайт не здійснює комерційної діяльності, не надає платних послуг і не призначений для отримання прибутку.<br>
-                  Зробила / зробив сайт: <strong>Колісніченко Кіра</strong>
-                </p>
+                <!-- 1 -->
+                <div class="menu-card">
+                    <a href="img/01-big-item.jpg"><img src="img/01-item.jpg" alt="Ягідний вибух"></a>
+                    <div class="card-content">
+                        <span class="category">Торти</span>
+                        <h4>Ягідний вибух</h4>
+                    </div>
+                </div>
 
-              </div>
+                <!-- 2 -->
+                <div class="menu-card">
+                    <a href="img/02-big-item.jpg"><img src="img/02-item.jpg" alt="Набір Асорті"></a>
+                    <div class="card-content">
+                        <span class="category">Макарони</span>
+                        <h4>Набір «Асорті»</h4>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="menu-card">
+                    <a href="img/03-big-item.jpg"><img src="img/03-item.jpg" alt="Шоколадний мус"></a>
+                    <div class="card-content">
+                        <span class="category">Десерти</span>
+                        <h4>Шоколадний мус</h4>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="menu-card">
+                    <a href="img/04-big-item.jpg"><img src="img/04-item.jpg" alt="Біла елегантність"></a>
+                    <div class="card-content">
+                        <span class="category">Весільні торти</span>
+                        <h4>Біла елегантність</h4>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="menu-card">
+                    <a href="img/05-big-item.jpg"><img src="img/05-item.jpg" alt="Капкейки з кремом"></a>
+                    <div class="card-content">
+                        <span class="category">Десерти</span>
+                        <h4>Капкейки з кремом</h4>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="menu-card">
+                    <a href="img/06-big-item.jpg"><img src="img/06-item.jpg" alt="Святковий кенді-бар"></a>
+                    <div class="card-content">
+                        <span class="category">Весільні</span>
+                        <h4>Святковий кенді-бар</h4>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="menu-card">
+                    <a href="img/07-big-item.jpg"><img src="img/07-item.jpg" alt="Фісташкова насолода"></a>
+                    <div class="card-content">
+                        <span class="category">Макарони</span>
+                        <h4>Фісташкова насолода</h4>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="menu-card">
+                    <a href="img/08-big-item.jpg"><img src="img/08-item.jpg" alt="Червоний оксамит"></a>
+                    <div class="card-content">
+                        <span class="category">Торти</span>
+                        <h4>Червоний оксамит</h4>
+                    </div>
+                </div>
+
             </div>
-          </div>
+        </div>
+
+        <!-- Підвал -->
+        <footer>
+            <div class="container">
+                <p>© 2026 Увага! Цей веб-сайт є навчальним проєктом, створеним виключно з освітньою метою в межах навчального курсу. Сайт не здійснює комерційної діяльності, не надає платних послуг і не призначений для отримання прибутку.<br>
+                Зробила / зробив сайт: <strong>Колісніченко Кіра</strong></p>
+            </div>
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
     </body>
 </html>
