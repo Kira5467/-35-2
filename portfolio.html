@@ -28,20 +28,27 @@
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/tooplate-style.css">
 
-        <!-- Фікс для вирівнювання сітки та картинок -->
+        <!-- Потужний фікс для вирівнювання сітки та фільтрів MixItUp -->
         <style>
+            /* Робимо рядок гнучким, щоб картки ніколи не чіплялися і не з'їжджали */
+            .projects-holder .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
             .project-item {
+                display: flex;
+                flex-direction: column;
                 margin-bottom: 30px;
             }
             .project-item .image {
                 overflow: hidden;
                 border-radius: 4px;
-                height: 220px; /* Фіксована висота контейнера зображення */
+                height: 220px; /* Фіксована висота картинки */
             }
             .project-item .image img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover; /* Акуратно обрізає фото без спотворення пропорцій */
+                object-fit: cover; /* Запобігає спотворенню пропорцій */
                 display: block;
             }
             .project-item .text {
@@ -98,10 +105,11 @@
                             <li class="filter" data-filter="wedding"><span>Весільні</span></li>
                         </ul>
                     </div>
+                    
                     <div class="projects-holder">
-                        
-                        <!-- ПЕРШИЙ РЯДОК (4 елементи) -->
                         <div class="row">
+                            
+                            <!-- 1 -->
                             <div class="col-md-3 col-sm-6 project-item mix cakes">
                               <div class="image">
                                 <a href="img/01-big-item.jpg" data-lightbox="image-1"><img src="img/01-item.jpg" alt="Торт Ягідний вибух"></a>
@@ -111,6 +119,8 @@
                                 <h4>Ягідний вибух</h4>
                               </div>
                             </div>
+
+                            <!-- 2 -->
                             <div class="col-md-3 col-sm-6 project-item mix macarons">
                               <div class="image">
                                 <a href="img/02-big-item.jpg" data-lightbox="image-1"><img src="img/02-item.jpg" alt="Макарони асорті"></a>
@@ -120,6 +130,8 @@
                                 <h4>Набір «Асорті»</h4>
                               </div>
                             </div>
+
+                            <!-- 3 -->
                             <div class="col-md-3 col-sm-6 project-item mix desserts">
                               <div class="image">
                                 <a href="img/03-big-item.jpg" data-lightbox="image-1"><img src="img/03-item.jpg" alt="Мусове тістечко"></a>
@@ -129,6 +141,8 @@
                                 <h4>Шоколадний мус</h4>
                               </div>
                             </div>
+
+                            <!-- 4 -->
                             <div class="col-md-3 col-sm-6 project-item mix wedding cakes">
                               <div class="image">
                                 <a href="img/04-big-item.jpg" data-lightbox="image-1"><img src="img/04-item.jpg" alt="Весільний двоярусний торт"></a>
@@ -138,10 +152,8 @@
                                 <h4>Біла елегантність</h4>
                               </div>
                             </div>
-                        </div>
 
-                        <!-- ДРУГИЙ РЯДОК (4 елементи) -->
-                        <div class="row">
+                            <!-- 5 -->
                             <div class="col-md-3 col-sm-6 project-item mix desserts">
                               <div class="image">
                                 <a href="img/05-big-item.jpg" data-lightbox="image-1"><img src="img/05-item.jpg" alt="Капкейки"></a>
@@ -151,6 +163,8 @@
                                 <h4>Капкейки з кремом</h4>
                               </div>
                             </div>
+
+                            <!-- 6 -->
                             <div class="col-md-3 col-sm-6 project-item mix wedding macarons">
                               <div class="image">
                                 <a href="img/06-big-item.jpg" data-lightbox="image-1"><img src="img/06-item.jpg" alt="Кенді-бар"></a>
@@ -160,9 +174,66 @@
                                 <h4>Святковий кенді-бар</h4>
                               </div>
                             </div>
+
+                            <!-- 7 -->
                             <div class="col-md-3 col-sm-6 project-item mix macarons">
                               <div class="image">
                                 <a href="img/07-big-item.jpg" data-lightbox="image-1"><img src="img/07-item.jpg" alt="Фісташкові макарони"></a>
                               </div>
                               <div class="text">
                                 <span>Макарони</span>
+                                <h4>Фісташкова насолода</h4>
+                              </div>
+                            </div>
+
+                            <!-- 8 -->
+                            <div class="col-md-3 col-sm-6 project-item mix cakes">
+                              <div class="image">
+                                <a href="img/08-big-item.jpg" data-lightbox="image-1"><img src="img/08-item.jpg" alt="Червоний оксамит"></a>
+                              </div>
+                              <div class="text">
+                                <span>Торти</span>
+                                <h4>Червоний оксамит</h4>
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Підвал сторінки -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ul>
+                  <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+                
+                <!-- Навчальне застереження та авторство -->
+                <p style="margin-top: 15px; font-size: 11px; opacity: 0.85; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                  © 2026 Увага! Цей веб-сайт є навчальним проєктом, створеним виключно з освітньою метою в межах навчального курсу. Сайт не здійснює комерційної діяльності, не надає платних послуг і не призначений для отримання прибутку.<br>
+                  Зробила / зробив сайт: <strong>Колісніченко Кіра</strong>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
