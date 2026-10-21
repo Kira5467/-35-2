@@ -28,30 +28,44 @@
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/tooplate-style.css">
 
-        <!-- Потужний фікс для вирівнювання сітки та фільтрів MixItUp -->
+        <!-- Жорстке вирівнювання сітки галереї -->
         <style>
-            /* Робимо рядок гнучким, щоб картки ніколи не чіплялися і не з'їжджали */
-            .projects-holder .row {
+            .projects-grid {
                 display: flex;
                 flex-wrap: wrap;
+                gap: 20px;
+                justify-content: flex-start;
             }
-            .project-item {
+            .project-card {
+                width: calc(25% - 15px);
+                background: #fff;
+                margin-bottom: 20px;
+                box-sizing: border-box;
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 30px;
             }
-            .project-item .image {
+            @media (max-width: 992px) {
+                .project-card {
+                    width: calc(50% - 10px);
+                }
+            }
+            @media (max-width: 576px) {
+                .project-card {
+                    width: 100%;
+                }
+            }
+            .project-card .image {
                 overflow: hidden;
                 border-radius: 4px;
-                height: 220px; /* Фіксована висота картинки */
+                height: 220px;
             }
-            .project-item .image img {
+            .project-card .image img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover; /* Запобігає спотворенню пропорцій */
+                object-fit: cover;
                 display: block;
             }
-            .project-item .text {
+            .project-card .text {
                 padding: 15px 0;
                 text-align: center;
             }
@@ -107,10 +121,10 @@
                     </div>
                     
                     <div class="projects-holder">
-                        <div class="row">
+                        <div class="projects-grid">
                             
                             <!-- 1 -->
-                            <div class="col-md-3 col-sm-6 project-item mix cakes">
+                            <div class="project-card mix cakes">
                               <div class="image">
                                 <a href="img/01-big-item.jpg" data-lightbox="image-1"><img src="img/01-item.jpg" alt="Торт Ягідний вибух"></a>
                               </div>
@@ -121,7 +135,7 @@
                             </div>
 
                             <!-- 2 -->
-                            <div class="col-md-3 col-sm-6 project-item mix macarons">
+                            <div class="project-card mix macarons">
                               <div class="image">
                                 <a href="img/02-big-item.jpg" data-lightbox="image-1"><img src="img/02-item.jpg" alt="Макарони асорті"></a>
                               </div>
@@ -132,7 +146,7 @@
                             </div>
 
                             <!-- 3 -->
-                            <div class="col-md-3 col-sm-6 project-item mix desserts">
+                            <div class="project-card mix desserts">
                               <div class="image">
                                 <a href="img/03-big-item.jpg" data-lightbox="image-1"><img src="img/03-item.jpg" alt="Мусове тістечко"></a>
                               </div>
@@ -143,7 +157,7 @@
                             </div>
 
                             <!-- 4 -->
-                            <div class="col-md-3 col-sm-6 project-item mix wedding cakes">
+                            <div class="project-card mix wedding cakes">
                               <div class="image">
                                 <a href="img/04-big-item.jpg" data-lightbox="image-1"><img src="img/04-item.jpg" alt="Весільний двоярусний торт"></a>
                               </div>
@@ -154,7 +168,7 @@
                             </div>
 
                             <!-- 5 -->
-                            <div class="col-md-3 col-sm-6 project-item mix desserts">
+                            <div class="project-card mix desserts">
                               <div class="image">
                                 <a href="img/05-big-item.jpg" data-lightbox="image-1"><img src="img/05-item.jpg" alt="Капкейки"></a>
                               </div>
@@ -165,7 +179,7 @@
                             </div>
 
                             <!-- 6 -->
-                            <div class="col-md-3 col-sm-6 project-item mix wedding macarons">
+                            <div class="project-card mix wedding macarons">
                               <div class="image">
                                 <a href="img/06-big-item.jpg" data-lightbox="image-1"><img src="img/06-item.jpg" alt="Кенді-бар"></a>
                               </div>
@@ -176,7 +190,7 @@
                             </div>
 
                             <!-- 7 -->
-                            <div class="col-md-3 col-sm-6 project-item mix macarons">
+                            <div class="project-card mix macarons">
                               <div class="image">
                                 <a href="img/07-big-item.jpg" data-lightbox="image-1"><img src="img/07-item.jpg" alt="Фісташкові макарони"></a>
                               </div>
@@ -187,7 +201,7 @@
                             </div>
 
                             <!-- 8 -->
-                            <div class="col-md-3 col-sm-6 project-item mix cakes">
+                            <div class="project-card mix cakes">
                               <div class="image">
                                 <a href="img/08-big-item.jpg" data-lightbox="image-1"><img src="img/08-item.jpg" alt="Червоний оксамит"></a>
                               </div>
