@@ -1,317 +1,613 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="uk"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="uk"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="uk"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="uk"> <!--<![endif]-->
-    <head>
-		<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "z1kpmd7d3x");
-</script>
-		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0KTBCB838P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delight | Авторські торти та крафтові солодощі</title>
 
-  gtag('config', 'G-0KTBCB838P');
-</script>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        
-        <title>Крафтова Кондитерська Sweet Delight | Авторські торти та десерти</title>
-        <meta name="description" content="Авторські торти, десерти на замовлення, десертні столи для свят та свіжа випічка щодня.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Fonts: Playfair Display & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/tooplate-style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <style>
-            /* Додаткові стилі для округлених кнопок та навігації */
-            .btn, .primary-button a, #form-submit, .service-item, .portfolio-item {
-                border-radius: 30px !important;
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastel: {
+                            50: '#fff0f3',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                        },
+                        cream: '#fffbf7',
+                        gold: {
+                            DEFAULT: '#d97706',
+                            hover: '#f59e0b',
+                        },
+                        choc: '#3f1d18',
+                    },
+                    fontFamily: {
+                        heading: ['"Playfair Display"', 'serif'],
+                        body: ['"Montserrat"', 'sans-serif'],
+                    }
+                }
             }
-            .site-navigation {
-                background: rgba(0, 0, 0, 0.85);
-                padding: 15px 0;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 9999;
-            }
-            .site-navigation ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                text-align: right;
-            }
-            .site-navigation ul li {
-                display: inline-block;
-                margin-left: 25px;
-            }
-            .site-navigation ul li a {
-                color: #ffffff;
-                font-weight: 600;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 13px;
-                letter-spacing: 1px;
-                transition: color 0.3s;
-            }
-            .site-navigation ul li a:hover {
-                color: #ff9999;
-            }
-            body {
-                padding-top: 50px;
-            }
-        </style>
-    </head>
-    <body>
+        }
+    </script>
 
-        <!-- Навігаційна панель -->
-        <div class="site-navigation">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <a href="index.html" style="color: #ffffff; font-weight: 700; font-size: 18px; text-decoration: none; line-height: 30px;">Sweet Delight</a>
-                    </div>
-                    <div class="col-md-8">
-                        <ul>
-                            <li><a href="index.html">Головна</a></li>
-                            <li><a href="gallery.html">Галерея</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Microsoft Clarity Tracking Code -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "z1kpmd7d3x");
+    </script>
+
+    <!-- Google Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0KTBCB838P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0KTBCB838P');
+    </script>
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #3f1d18;
+            background-color: #fffbf7;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-cream text-choc antialiased selection:bg-pastel-200 selection:text-choc">
+
+    <!-- 1. Top Announcement Bar -->
+    <div class="bg-pastel-100 text-choc border-b border-pastel-200 py-2.5 px-4 text-xs sm:text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-4 flex-wrap justify-center">
+                <a href="tel:+380500600780" class="hover:text-gold transition flex items-center gap-1.5 font-medium">
+                    <i class="fa-solid fa-phone text-gold text-xs"></i> +38 (050) 060-07-80
+                </a>
+                <span class="hidden sm:inline text-pastel-300">•</span>
+                <a href="tel:+380670600110" class="hover:text-gold transition flex items-center gap-1.5 font-medium">
+                    <i class="fa-solid fa-phone text-gold text-xs"></i> +38 (067) 060-01-10
+                </a>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="text-xs opacity-90"><i class="fa-regular fa-clock text-gold mr-1"></i> Пн-Нд: 09:00 - 20:00</span>
             </div>
         </div>
+    </div>
 
-        <!-- Головна секція / Вітання -->
-        <section class="first-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="text-content">
-                  <h2>Ласкаво просимо до Sweet Delight</h2>
-                  <div class="line-dec"></div>
-                  <span>Вишукані солодощі та авторські торти ручної роботи</span>
+    <!-- 2. Sticky Header with Navigation -->
+    <header class="sticky top-0 z-50 bg-cream/95 backdrop-blur-md border-b border-pastel-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-full bg-pastel-200 flex items-center justify-center text-choc group-hover:bg-pastel-300 transition duration-300">
+                    <i class="fa-solid fa-cake-candles text-lg text-choc"></i>
                 </div>
-              </div>
+                <div class="flex flex-col">
+                    <span class="font-heading font-bold text-2xl tracking-wide text-choc leading-none">Sweet Delight</span>
+                    <span class="text-[10px] tracking-widest uppercase text-gold font-semibold mt-1">Крафтова Кондитерська</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links (ONLY Головна & Галерея) -->
+            <nav class="hidden md:flex items-center gap-8 font-medium">
+                <a href="index.html" class="text-choc hover:text-gold transition-colors py-1 border-b-2 border-gold font-semibold">Головна</a>
+                <a href="gallery.html" class="text-choc/80 hover:text-gold transition-colors py-1 border-b-2 border-transparent hover:border-gold">Галерея</a>
+            </nav>
+
+            <!-- CTA Order Button -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="#order" class="bg-gold hover:bg-gold-hover text-white px-6 py-2.5 rounded-full font-medium transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-paper-plane text-xs"></i> Замовити
+                </a>
             </div>
-          </div>
-        </section>
 
-        <!-- Секція переваг та послуг -->
-        <section class="second-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <div class="icon">
-                    <img src="img/first-icon.png" alt="Свіжі інгредієнти">
-                  </div>
-                  <h4>Натуральні продукти</h4>
-                  <p>Використовуємо тільки натуральне вершкове масло, свіжі ягоди та справжній бельгійський шоколад.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <div class="icon">
-                    <img src="img/second-icon.png" alt="Торти на замовлення">
-                  </div>
-                  <h4>Індивідуальний дизайн</h4>
-                  <p>Створимо унікальний торт для вашого весілля, дня народження чи корпоративного свята.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <div class="icon">
-                    <img src="img/third-icon.png" alt="Швидка доставка">
-                  </div>
-                  <h4>Дбайлива доставка</h4>
-                  <p>Доставляємо замовлення у спеціальних холодильних боксах точно вчасно до вашого свята.</p>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="service-item">
-                  <div class="icon">
-                    <img src="img/fourth-icon.png" alt="Кенді-бари">
-                  </div>
-                  <h4>Кенді-бари та десерти</h4>
-                  <p>Оформлюємо солодкі зони: капкейки, макарони, трайфли та кейк-попси у стилі вашої події.</p>
-                </div>
-              </div>
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-toggle" aria-label="Відкрити меню" class="md:hidden p-2 rounded-full text-choc hover:bg-pastel-100 transition focus:outline-none">
+                <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-b border-pastel-200 px-4 pt-3 pb-6 transition-all duration-300">
+            <div class="flex flex-col space-y-3 font-medium">
+                <a href="index.html" class="px-3 py-2 rounded-xl bg-pastel-100 text-choc font-semibold">Головна</a>
+                <a href="gallery.html" class="px-3 py-2 rounded-xl hover:bg-pastel-50 text-choc transition">Галерея</a>
+                <a href="#order" id="mobile-order-btn" class="mt-2 text-center bg-gold hover:bg-gold-hover text-white py-2.5 rounded-full font-medium transition shadow">
+                    Замовити десерт
+                </a>
             </div>
-          </div>
-        </section>
+        </div>
+    </header>
 
-        <!-- Про кондитерську -->
-        <section class="third-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 col-md-offset-1">
-                <div class="left-image col-md-4">
-                  <img src="img/left-image.png" alt="Про кондитерську">
-                </div>
-                <div class="right-text col-md-8">
-                  <h4><em>Майстерність та пристрасть</em><br>Створюємо випічку з любов'ю з 2018 року</h4>
-                  <p>У Sweet Delight ми віримо, що кожен десерт має бути не лише красивим, а й неймовірно смачним. Наші кондитери поєднують класичні французькі технології із сучасними трендами декору. Ми гарантуємо ідеальний смак, безапеляційну якість інгредієнтів та увагу до кожної деталі вашого замовлення.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Портфоліо / Галерея солодощів -->
-        <section class="fourth-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <div class="portfolio-item first-item">
-                  <div class="image">
-                    <a href="img/01-big-item.jpg" data-lightbox="image-1"><img src="img/first-item.jpg" alt="Весільний торт"></a>
-                  </div>
-                  <div class="text">
-                    <span>Весільні торти</span>
-                    <h4>Ніжність та елегантність</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="portfolio-item second-item">
-                  <div class="image">
-                    <a href="img/02-big-item.jpg" data-lightbox="image-1"><img src="img/second-item.jpg" alt="Французькі макарони"></a>
-                  </div>
-                  <div class="text">
-                    <span>Макарони</span>
-                    <h4>Яскраві смаки</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="portfolio-item third-item">
-                  <div class="image">
-                    <a href="img/03-big-item.jpg" data-lightbox="image-1"><img src="img/third-item.jpg" alt="Мусові тістечка"></a>
-                  </div>
-                  <div class="text">
-                    <span>Мусові десерти</span>
-                    <h4>Сучасна класика</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <div class="send-to-portfolio">
-                  <span>Бажаєте переглянути більше робіт?</span>
-                  <div class="primary-button">
-                    <a href="gallery.html">Переглянути галерею</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Додатковий інформаційний блок -->
-        <section class="fivth-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-10 col-md-offset-1"> 
-                <div class="left-text col-md-8">
-                  <h4><em>Безглютенові та веганські опції</em><br>Солодощі для кожного гостя</h4>
-                  <p>Ми дбаємо про всіх наших клієнтів, тому випікаємо десерти за спеціальними рецептурами: без вмісту глютену, лактози чи цукру. Тепер ви можете насолоджуватися улюбленими ласощами без шкоди для здоров’я чи раціону!</p>
-                </div>
-                <div class="right-image col-md-4">
-                  <img src="img/right-image.png" alt="Корисні десерти">
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Контакти та форма замовлення -->
-        <section class="sixth-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <form id="contact" action="" method="post">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input name="name" type="text" class="form-control" id="name" placeholder="Ваше ім'я..." required="">
-                      </fieldset>
+    <main>
+        <!-- 3. Hero Section -->
+        <section class="relative overflow-hidden py-16 lg:py-24 bg-gradient-to-b from-pastel-50 to-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pastel-100 border border-pastel-200 text-choc text-xs sm:text-sm font-medium">
+                            <i class="fa-solid fa-sparkles text-gold"></i> Авторські торти та вишукані десерти
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-choc leading-tight">
+                            Ласкаво просимо до <span class="italic text-gold">Sweet Delight</span>
+                        </h1>
+                        <p class="text-lg sm:text-xl text-choc/80 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                            Вишукані солодощі та авторські торти ручної роботи. Створюємо неповторні смаки та незабутню атмосферу для ваших найважливіших подій.
+                        </p>
+                        <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <a href="#order" class="bg-gold hover:bg-gold-hover text-white px-8 py-4 rounded-full font-semibold transition duration-300 shadow-lg hover:shadow-xl text-center">
+                                Зробити замовлення
+                            </a>
+                            <a href="gallery.html" class="bg-white hover:bg-pastel-50 text-choc border border-pastel-200 px-8 py-4 rounded-full font-semibold transition duration-300 text-center shadow-sm hover:border-pastel-300">
+                                Переглянути десерти
+                            </a>
+                        </div>
+                        <div class="pt-6 grid grid-cols-3 gap-4 border-t border-pastel-200/60 max-w-md mx-auto lg:mx-0 text-center">
+                            <div>
+                                <p class="font-heading font-bold text-2xl text-choc">100%</p>
+                                <p class="text-xs text-choc/70">Натуральні інгредієнти</p>
+                            </div>
+                            <div>
+                                <p class="font-heading font-bold text-2xl text-choc">5000+</p>
+                                <p class="text-xs text-choc/70">Щасливих клієнтів</p>
+                            </div>
+                            <div>
+                                <p class="font-heading font-bold text-2xl text-choc">6+ років</p>
+                                <p class="text-xs text-choc/70">Майстерності</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input name="email" type="email" class="form-control" id="email" placeholder="Ваш Email або телефон..." required="">
-                      </fieldset>
+
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <!-- Background accent shape -->
+                            <div class="absolute -top-4 -left-4 w-72 h-72 bg-pastel-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+                            <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-pastel-300 rounded-full mix-blend-multiply filter blur-xl opacity-50"></div>
+                            
+                            <!-- Hero Image -->
+                            <div class="relative rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-pastel-100">
+                                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Вишуканий авторський торт Sweet Delight" class="w-full h-[420px] sm:h-[480px] object-cover hover:scale-105 transition duration-700">
+                                <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-pastel-100 flex items-center justify-between">
+                                    <div>
+                                        <p class="text-xs text-gold font-semibold uppercase tracking-wider">Флагманський десерт</p>
+                                        <p class="font-heading font-bold text-choc">Мусовий торт "Ніжність"</p>
+                                    </div>
+                                    <span class="text-xs font-semibold bg-pastel-100 text-choc px-3 py-1.5 rounded-full">Ручна робота</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Опишіть бажаний десерт або дату свята..." required=""></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="btn">Замовити розрахунок</button>
-                      </fieldset>
-                    </div>
-                  </form>
+
                 </div>
-              </div>
-              <div class="col-md-5">
-                <div class="right-info">
-                  <ul>
-                    <li><a href="mailto:info@sweetdelight.com"><i class="fa fa-envelope"></i>info@sweetdelight.com</a></li>
-                    <li><a href="tel:+380500600780"><i class="fa fa-phone"></i>+38 (050) 060-07-80 / +38 (067) 060-01-10</a></li>
-                    <li><a href="#"><i class="fa fa-map-marker"></i>м. Київ, вул. Затишна, 12</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
-          </div>
         </section>
 
-		<!-- Підвал сторінки -->
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <ul>
-                  <li><a href="https://www.facebook.com/share/1dwV6u1NKS/"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com/suh1ne_?utm_source=qr&psln=MWd0cnU2ank4d2c2ZA=="><i class="fa fa-instagram"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
+        <!-- 4. Services / Advantages Section -->
+        <section class="py-16 sm:py-20 bg-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+                    <h2 class="text-3xl sm:text-4xl font-heading font-bold text-choc mb-4">Чому обирають Sweet Delight</h2>
+                    <p class="text-choc/70 font-light">Ми створюємо більше, ніж просто солодощі — ми даруємо незабутні емоції та смакове задоволення.</p>
+                </div>
 
-                <!-- Навчальне застереження та авторство -->
-                <p style="margin-top: 15px; font-size: 11px; opacity: 0.85; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.6;">
-                  © 2026 Увага! Цей веб-сайт є навчальним проєктом, створеним виключно з освітньою метою в межах навчального курсу. Сайт не здійснює комерційної діяльності, не надає платних послуг і не призначений для отримання прибутку.<br>
-                  Зробила / зробив сайт: <strong>Колісніченко Кіра</strong>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Advantage 1 -->
+                    <div class="bg-pastel-50/60 p-8 rounded-3xl border border-pastel-100 hover:shadow-lg transition duration-300 group hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-2xl bg-pastel-200 flex items-center justify-center text-choc text-2xl mb-6 group-hover:bg-gold group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-choc mb-3">Натуральні продукти</h3>
+                        <p class="text-sm text-choc/75 leading-relaxed">
+                            Використовуємо лише натуральні вершки, бельгійський шоколад, свіжі ягоди та добірні горіхи без штучних барвників та консервантів.
+                        </p>
+                    </div>
+
+                    <!-- Advantage 2 -->
+                    <div class="bg-pastel-50/60 p-8 rounded-3xl border border-pastel-100 hover:shadow-lg transition duration-300 group hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-2xl bg-pastel-200 flex items-center justify-center text-choc text-2xl mb-6 group-hover:bg-gold group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-choc mb-3">Індивідуальний дизайн</h3>
+                        <p class="text-sm text-choc/75 leading-relaxed">
+                            Втілюємо в життя будь-які ваші ідеї та декоруємо торти відповідно до тематики вашого свята та особистих побажань.
+                        </p>
+                    </div>
+
+                    <!-- Advantage 3 -->
+                    <div class="bg-pastel-50/60 p-8 rounded-3xl border border-pastel-100 hover:shadow-lg transition duration-300 group hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-2xl bg-pastel-200 flex items-center justify-center text-choc text-2xl mb-6 group-hover:bg-gold group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-choc mb-3">Дбайлива доставка</h3>
+                        <p class="text-sm text-choc/75 leading-relaxed">
+                            Надійна та безпечна доставка в спеціальних термо-контейнерах точно в обумовлений час прямо до дверей.
+                        </p>
+                    </div>
+
+                    <!-- Advantage 4 -->
+                    <div class="bg-pastel-50/60 p-8 rounded-3xl border border-pastel-100 hover:shadow-lg transition duration-300 group hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-2xl bg-pastel-200 flex items-center justify-center text-choc text-2xl mb-6 group-hover:bg-gold group-hover:text-white transition duration-300">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                        </div>
+                        <h3 class="font-heading font-bold text-xl text-choc mb-3">Кенді-бари та десерти</h3>
+                        <p class="text-sm text-choc/75 leading-relaxed">
+                            Комплексне оформлення солодких столів для весіль, корпоративів та дитячих свято з гармонійним асортиментом.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. About Us Section -->
+        <section class="py-16 sm:py-24 bg-gradient-to-b from-cream via-pastel-50/40 to-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    
+                    <div class="relative">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80" alt="Кондитерська майстерня" class="rounded-3xl shadow-md object-cover h-64 sm:h-80 w-full transform -rotate-1 hover:rotate-0 transition duration-300">
+                            <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=600&q=80" alt="Процес прикрашання торта" class="rounded-3xl shadow-md object-cover h-64 sm:h-80 w-full translate-y-6 transform rotate-2 hover:rotate-0 transition duration-300">
+                        </div>
+                        <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white px-6 py-3 rounded-full shadow-xl border border-pastel-100 flex items-center gap-3">
+                            <i class="fa-solid fa-heart text-rose-500 text-lg"></i>
+                            <span class="text-xs sm:text-sm font-semibold text-choc">З любов'ю у кожному десерті</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="inline-block px-4 py-1.5 rounded-full bg-pastel-100 text-gold text-xs font-bold uppercase tracking-wider">
+                            Наша історія
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-choc leading-tight">
+                            Майстерність та пристрасть — Створюємо випічку з любов'ю з 2018 року
+                        </h2>
+                        <p class="text-choc/80 leading-relaxed font-light">
+                            Історія кондитерської **Sweet Delight** розпочалася з невеликої сімейної кухні та великої мрії — повернути справжній, витончений смак традиційним десертам, поєднавши їх із сучасними кондитерськими трендами.
+                        </p>
+                        <p class="text-choc/80 leading-relaxed font-light">
+                            За роки роботи ми вдосконалили рецептури десятків тортів, тістечок та макарунів. Кожен виріб для нас — це витвір мистецтва, в який ми вкладаємо майстерність, турботу та виключно якісні інгредієнти.
+                        </p>
+                        <div class="pt-2 flex flex-wrap gap-4">
+                            <div class="flex items-center gap-3 bg-white px-4 py-3 rounded-2xl border border-pastel-100 shadow-sm">
+                                <i class="fa-solid fa-award text-gold text-xl"></i>
+                                <div>
+                                    <p class="font-bold text-sm text-choc">Авторські рецепти</p>
+                                    <p class="text-xs text-choc/60">Унікальні смакові поєднання</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 bg-white px-4 py-3 rounded-2xl border border-pastel-100 shadow-sm">
+                                <i class="fa-solid fa-face-smile text-gold text-xl"></i>
+                                <div>
+                                    <p class="font-bold text-sm text-choc">Тисячі посмішок</p>
+                                    <p class="text-xs text-choc/60">На кожному святі</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Portfolio / Gallery Preview Section -->
+        <section class="py-16 sm:py-20 bg-cream border-t border-pastel-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+                    <div>
+                        <span class="text-xs font-bold text-gold uppercase tracking-widest">Портфоліо</span>
+                        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-choc mt-1">Галерея наших шедеврів</h2>
+                    </div>
+                    <!-- Navigation link to gallery.html with CLEAN button label -->
+                    <a href="gallery.html" class="bg-pastel-100 hover:bg-pastel-200 text-choc px-6 py-3 rounded-full font-semibold transition duration-300 flex items-center gap-2 group text-sm">
+                        <span>Переглянути всю галерею</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition duration-300"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Item 1 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-pastel-100 group hover:shadow-xl transition duration-300">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=700&q=80" alt="Весільний торт" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-4 right-4 bg-white/90 text-choc text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-md">Торти</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-heading font-bold text-xl text-choc mb-2">Святкові та весільні торти</h3>
+                            <p class="text-sm text-choc/70 mb-4">Багатоярусні та багатошарові авторські торти з елегантним декором для особливих подій.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-pastel-100 group hover:shadow-xl transition duration-300">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=700&q=80" alt="Французькі Макаруни" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-4 right-4 bg-white/90 text-choc text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-md">Макаруни</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-heading font-bold text-xl text-choc mb-2">Ніжні французькі макаруни</h3>
+                            <p class="text-sm text-choc/70 mb-4">Хрустка мигдалева скоринка та шовковистий ганаш із широкою гамою яскравих смаків.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-pastel-100 group hover:shadow-xl transition duration-300">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=700&q=80" alt="Мусові десерти" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-4 right-4 bg-white/90 text-choc text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-md">Мусові десерти</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-heading font-bold text-xl text-choc mb-2">Вишукані мусові тістечка</h3>
+                            <p class="text-sm text-choc/70 mb-4">Легка текстура, дзеркальна глазур та насичені фруктово-ягідні або шоколадні начинки.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <a href="gallery.html" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-white px-8 py-3.5 rounded-full font-semibold transition duration-300 shadow-md">
+                        <span>Переглянути всю галерею</span>
+                        <i class="fa-solid fa-images"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Dietary Options Section -->
+        <section class="py-16 bg-pastel-100/60 border-y border-pastel-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-pastel-200 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-8 space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-semibold">
+                            <i class="fa-solid fa-wheat-awn-circle-exclamation"></i> Турбота про кожного
+                        </div>
+                        <h2 class="text-3xl font-heading font-bold text-choc">Безглютенові та веганські опції</h2>
+                        <p class="text-choc/80 text-base leading-relaxed">
+                            Дотримуєтеся особливого раціону чи маєте алергії? Ми готуємо корисні десерти без цукру, без глютену, лактози та веганські солодощі, які за смаком нічим не поступаються класичним рецептам!
+                        </p>
+                        <div class="flex flex-wrap gap-3 pt-2">
+                            <span class="bg-pastel-50 border border-pastel-200 text-choc text-xs px-3.5 py-1.5 rounded-full font-medium">Без цукру</span>
+                            <span class="bg-pastel-50 border border-pastel-200 text-choc text-xs px-3.5 py-1.5 rounded-full font-medium">Без глютену</span>
+                            <span class="bg-pastel-50 border border-pastel-200 text-choc text-xs px-3.5 py-1.5 rounded-full font-medium">100% Vegan</span>
+                            <span class="bg-pastel-50 border border-pastel-200 text-choc text-xs px-3.5 py-1.5 rounded-full font-medium">Низькокалорійні</span>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-4 text-center lg:text-right">
+                        <a href="#order" class="inline-block bg-choc hover:bg-choc/90 text-white px-8 py-4 rounded-full font-semibold transition duration-300 shadow-md">
+                            Замовити спец-десерт
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Order Form & Contacts Section -->
+        <section id="order" class="py-16 sm:py-24 bg-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contacts Side -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <span class="text-xs font-bold text-gold uppercase tracking-widest">Зв'язок з нами</span>
+                            <h2 class="text-3xl sm:text-4xl font-heading font-bold text-choc mt-1">Контакти та замовлення</h2>
+                            <p class="text-choc/75 mt-3 leading-relaxed">
+                                Заповніть форму замовлення або зв'яжіться з нами зручним для вас способом. Ми з радістю допоможемо обрати найкращий десерт!
+                            </p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <!-- Phone 1 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-pastel-200 flex items-center justify-center text-choc shrink-0 mt-1">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-choc/60 font-medium">Телефон для замовлень #1</p>
+                                    <a href="tel:+380500600780" class="text-lg font-bold text-choc hover:text-gold transition">+38 (050) 060-07-80</a>
+                                </div>
+                            </div>
+
+                            <!-- Phone 2 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-pastel-200 flex items-center justify-center text-choc shrink-0 mt-1">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-choc/60 font-medium">Телефон для замовлень #2</p>
+                                    <a href="tel:+380670600110" class="text-lg font-bold text-choc hover:text-gold transition">+38 (067) 060-01-10</a>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-pastel-200 flex items-center justify-center text-choc shrink-0 mt-1">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-choc/60 font-medium">Електронна пошта</p>
+                                    <a href="mailto:info@sweetdelight.com" class="text-lg font-bold text-choc hover:text-gold transition">info@sweetdelight.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-full bg-pastel-200 flex items-center justify-center text-choc shrink-0 mt-1">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-choc/60 font-medium">Кондитерська майстерня</p>
+                                    <p class="text-base font-bold text-choc">м. Київ, вул. Солодка, 12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Form Side -->
+                    <div class="lg:col-span-7">
+                        <div class="bg-pastel-50/80 p-8 sm:p-10 rounded-3xl border border-pastel-200 shadow-md">
+                            <h3 class="font-heading font-bold text-2xl text-choc mb-2">Форма індивідуального замовлення</h3>
+                            <p class="text-sm text-choc/70 mb-6">Залиште заявку і наш кондитер зателефонує вам для уточнення деталей.</p>
+
+                            <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                    <div>
+                                        <label class="block text-xs font-semibold text-choc uppercase tracking-wider mb-2">Ваше ім'я *</label>
+                                        <input type="text" required placeholder="Олена" class="w-full px-4 py-3.5 rounded-2xl border border-pastel-200 bg-white focus:outline-none focus:ring-2 focus:ring-gold/50 transition">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-semibold text-choc uppercase tracking-wider mb-2">Номер телефону *</label>
+                                        <input type="tel" required placeholder="+38 (000) 000-00-00" class="w-full px-4 py-3.5 rounded-2xl border border-pastel-200 bg-white focus:outline-none focus:ring-2 focus:ring-gold/50 transition">
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                    <div>
+                                        <label class="block text-xs font-semibold text-choc uppercase tracking-wider mb-2">Тип десерту</label>
+                                        <select class="w-full px-4 py-3.5 rounded-2xl border border-pastel-200 bg-white focus:outline-none focus:ring-2 focus:ring-gold/50 transition text-choc/80">
+                                            <option>Авторський торт</option>
+                                            <option>Набір макарунів</option>
+                                            <option>Мусові тістечка</option>
+                                            <option>Кенді-бар</option>
+                                            <option>Особливий/Дієтичний десерт</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-semibold text-choc uppercase tracking-wider mb-2">Бажана дата святкування</label>
+                                        <input type="date" class="w-full px-4 py-3.5 rounded-2xl border border-pastel-200 bg-white focus:outline-none focus:ring-2 focus:ring-gold/50 transition text-choc/80">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-choc uppercase tracking-wider mb-2">Коментар або побажання до дизайну</label>
+                                    <textarea rows="4" placeholder="Опишіть ваші побажання щодо ваги, смаку чи зовнішнього оформлення..." class="w-full px-4 py-3.5 rounded-2xl border border-pastel-200 bg-white focus:outline-none focus:ring-2 focus:ring-gold/50 transition"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full bg-gold hover:bg-gold-hover text-white py-4 rounded-full font-semibold transition duration-300 shadow-md text-base flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-paper-plane"></i> Надіслати замовлення
+                                </button>
+                            </form>
+
+                            <div id="formSuccess" class="hidden mt-4 p-4 rounded-2xl bg-emerald-100 text-emerald-800 text-sm font-medium text-center">
+                                Дякуємо за ваше замовлення! Ми зв'яжемося з вами найближчим часом.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 9. Footer -->
+    <footer class="bg-choc text-cream pt-16 pb-12 border-t border-choc/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-cream/10">
+                
+                <!-- Logo & Socials -->
+                <div class="md:col-span-6 space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-9 h-9 rounded-full bg-pastel-200 flex items-center justify-center text-choc">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+                        <span class="font-heading font-bold text-2xl tracking-wide text-cream">Sweet Delight</span>
+                    </div>
+                    <p class="text-sm text-cream/70 max-w-sm font-light">
+                        Створюємо витончені солодкі моменти для ваших найважливіших свят. Тільки найкращі натуральні продукти.
+                    </p>
+                    
+                    <!-- Exact Social Links Provided -->
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="https://www.facebook.com/share/1dwV6u1NKS/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-full bg-cream/10 hover:bg-gold flex items-center justify-center text-cream transition duration-300">
+                            <i class="fa-brands fa-facebook-f text-base"></i>
+                        </a>
+                        <a href="https://www.instagram.com/suh1ne_?utm_source=qr&psln=MWd0cnU2ank4d2c2ZA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-full bg-cream/10 hover:bg-gold flex items-center justify-center text-cream transition duration-300">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Footer Navigation (ONLY Головна and Галерея) -->
+                <div class="md:col-span-6 flex flex-col md:items-end justify-start space-y-4">
+                    <h4 class="font-heading font-semibold text-lg text-cream">Навігація</h4>
+                    <div class="flex items-center gap-6 text-sm">
+                        <a href="index.html" class="hover:text-gold transition font-medium">Головна</a>
+                        <a href="gallery.html" class="hover:text-gold transition font-medium">Галерея</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mandatory Educational Disclaimer -->
+            <div class="pt-8 text-center max-w-4xl mx-auto space-y-3">
+                <p class="text-xs sm:text-sm text-cream/70 leading-relaxed font-light">
+                    © 2026 Увага! Цей веб-сайт є навчальним проєктом, створеним виключно з освітньою метою в межах навчального курсу. Сайт не здійснює комерційної діяльності, не надає платних послуг і не призначений для отримання прибутку.
                 </p>
-
-              </div>
+                <p class="text-xs sm:text-sm font-semibold text-pastel-200">
+                    Зробила / зробив сайт: Колісніченко Кіра
+                </p>
             </div>
-          </div>
-        </footer>
+        </div>
+    </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile menu toggle logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileOrderBtn = document.getElementById('mobile-order-btn');
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if(mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        mobileOrderBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+        });
 
-    </body>
+        // Form Submission Simulation
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const successBox = document.getElementById('formSuccess');
+            const form = document.getElementById('contactForm');
+            
+            successBox.classList.remove('hidden');
+            form.reset();
+            
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
 </html>
